@@ -2,8 +2,17 @@ export const NetworkId = 'testnet';
 
 export const HelloNearContract = {
   mainnet: 'hello.near-examples.near',
-  // testnet: 'hello.near-examples.testnet',
-  testnet: 'neramind.testnet',
+  testnet: 'hello.near-examples.testnet',
+}
+
+export const DonationContract = {
+  mainnet: 'hello.near-examples.near',
+  testnet: 'dev-1699449028845-60940619211767'
+}
+
+export const PaymentContract = {
+  mainnet: 'hello.near-examples.near',
+  testnet: 'dev-1699449028845-60940619211767'
 }
 
 export const ComponentMap = {

@@ -5,10 +5,16 @@ import { DocsCard, HelloComponentsCard, HelloNearCard } from '@/components/cards
 import NearLogo from 'public/logo2.jpg';
 import { useState } from 'react';
 
+import { NetworkId, PaymentContract } from '@/config';
+
 import { genStories, genComic } from '@/services';
 import { Progress } from '@/components/Progress';
 
+const CONTRACT = PaymentContract[NetworkId];
+
 export default function Home() {
+  // const { signedAccountId, viewMethod, callMethod } = useWallet();
+
   const [textInput, setTextInput] = useState("");
   const [stories, setStories] = useState([]);
   const [selectedStory, setSelectedStory] = useState("");
